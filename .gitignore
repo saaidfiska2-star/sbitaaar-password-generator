@@ -1,0 +1,30 @@
+# نظام التشغيل
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# محررات النصوص
+*.swp
+*.swo
+*~
+
+# مجلدات المؤقتة
+.tmp/
+temp/
+
+# ملفات النظام
+*.log
+*.tmp
+
+# مجلدات IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node.js
+node_modules/

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مولد كلمات المرور القوية - SBITAAAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>مولد كلمات المرور</span>
+            </div>
+            <div class="subtitle">
+                <p>إنشاء كلمات مرور قوية وآمنة بنقرة واحدة</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="password-display">
+                <div class="password-box">
+                    <input type="text" id="password-output" readonly placeholder="سيتم عرض كلمة المرور هنا">
+                    <button class="copy-btn" id="copy-btn" title="نسخ كلمة المرور">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+                <div class="password-strength">
+                    <div class="strength-meter">
+                        <div class="strength-bar" id="strength-bar"></div>
+                    </div>
+                    <span class="strength-text" id="strength-text">غير محدد</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label for="length-slider">طول كلمة المرور: <span id="length-value">16</span></label>
+                    <input type="range" id="length-slider" min="8" max="64" value="16" class="slider">
+                </div>
+
+                <div class="options-grid">
+                    <div class="option-item">
+                        <input type="checkbox" id="uppercase" checked>
+                        <label for="uppercase">
+                            <i class="fas fa-font"></i>
+                            أحرف كبيرة (A-Z)
+                        </label>
+                    </div>
+                    
+                    <div class="option-item">
+                        <input type="checkbox" id="lowercase" checked>
+                        <label for="lowercase">
+                            <i class="fas fa-font"></i>
+                            أحرف صغيرة (a-z)
+                        </label>
+                    </div>
+                    
+                    <div class="option-item">
+                        <input type="checkbox" id="numbers" checked>
+                        <label for="numbers">
+                            <i class="fas fa-hashtag"></i>
+                            أرقام (0-9)
+                        </label>
+                    </div>
+                    
+                    <div class="option-item">
+                        <input type="checkbox" id="symbols" checked>
+                        <label for="symbols">
+                            <i class="fas fa-at"></i>
+                            رموز خاصة (!@#$)
+                        </label>
+                    </div>
+                    
+                    <div class="option-item">
+                        <input type="checkbox" id="exclude-similar">
+                        <label for="exclude-similar">
+                            <i class="fas fa-eye-slash"></i>
+                            استبعاد الرموز المتشابهة
+                        </label>
+                    </div>
+                    
+                    <div class="option-item">
+                        <input type="checkbox" id="exclude-ambiguous">
+                        <label for="exclude-ambiguous">
+                            <i class="fas fa-ban"></i>
+                            استبعاد الرموز الغامضة
+                        </label>
+                    </div>
+                </div>
+
+                <button class="generate-btn" id="generate-btn">
+                    <i class="fas fa-sync-alt"></i>
+                    توليد كلمة مرور جديدة
+                </button>
+            </div>
+
+            <div class="tips-section">
+                <h3><i class="fas fa-lightbulb"></i> نصائح الأمان</h3>
+                <ul class="tips-list">
+                    <li>استخدم كلمة مرور مختلفة لكل حساب</li>
+                    <li>يجب أن تحتوي على 12 حرف على الأقل</li>
+                    <li>امزج بين الأحرف والأرقام والرموز</li>
+                    <li>لا تستخدم معلومات شخصية</li>
+                    <li>احفظ كلمات المرور في مدير كلمات مرور آمن</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 SBITAAAR - جميع الحقوق محفوظة | آمن ومجاني بالكامل</p>
+            <p class="privacy-note">
+                <i class="fas fa-shield-alt"></i>
+                كلمات المرور تُولد محلياً في متصفحك - لا يتم إرسال أي بيانات
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
